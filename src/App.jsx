@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar'
 import Herosection from './Components/Herosection'
 import Carousel from './Components/Carousel'
 import Cards from './Components/Cards'
+import Textarea from './Components/Textarea'
 import Footer from './Components/Footer'
 import About from './Pages/About'
 import { Route, Routes } from 'react-router-dom'
@@ -19,6 +20,7 @@ const App = () => {
         <Carousel />
         <Herosection />
         <Cards />
+        <Textarea/>
       </>
     }
   />
