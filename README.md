@@ -1,16 +1,50 @@
-# React + Vite
+# Ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive e-commerce storefront UI built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+The home page combines a rotating carousel, hero banner, feature cards and a contact block, with a separate About page behind client-side routing. The layout is built mobile-first and scales up to desktop.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Sections
 
-## React Compiler
+- **Navbar** — persistent site navigation
+- **Carousel** — rotating promotions
+- **Hero** — primary storefront banner
+- **Cards** — product and feature highlights
+- **Contact block** — message form UI
+- **Footer** — links and site information
+- **About page** — standalone route at `/about`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+- React 19 + Vite
+- Tailwind CSS 4
+- Flowbite components
+- React Router 7
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+```bash
+npm run build
+npm run preview
+npm run lint
+```
+
+## Structure
+
+```
+src/
+├── Components/   # Navbar, Herosection, Carousel, Cards, Textarea, Footer
+├── Pages/        # About
+├── App.jsx       # routes and page composition
+├── index.css     # Tailwind entry
+└── main.jsx
+```
+
+## Scope
+
+This is a front-end build: product data is static and there is no cart state or backend. The focus is responsive layout, reusable section components and routing.
